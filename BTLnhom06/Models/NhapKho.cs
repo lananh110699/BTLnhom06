@@ -29,6 +29,9 @@ namespace BTLnhom06.Models
         [Display(Name = "Đơn Giá")]
         public String DonGia { get; set; }
 
+        [Display(Name = "Thành Tiền")]
+        public String ThanhTien { get; set; }
+
         [Required(ErrorMessage = "Mã NV không được để trống")]
         [Display(Name = "Mã NV")]
         public String MaNV { get; set; }
