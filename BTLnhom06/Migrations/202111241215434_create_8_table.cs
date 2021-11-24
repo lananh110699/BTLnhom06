@@ -74,6 +74,7 @@ namespace BTLnhom06.Migrations
                         MaHang = c.String(nullable: false),
                         SoLuong = c.String(),
                         DonGia = c.String(),
+                        ThanhTien = c.String(),
                         MaNV = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.MaPhieuNhap);

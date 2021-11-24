@@ -128,22 +128,26 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaoCaos1Controller.cs" />
     <Compile Include="Controllers\DangNhapsController.cs" />
+    <Compile Include="Controllers\HangHoas1Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KhachHangs1Controller.cs" />
+    <Compile Include="Controllers\NCCs1Controller.cs" />
+    <Compile Include="Controllers\NhapKhoes1Controller.cs" />
+    <Compile Include="Controllers\NVKhoesController.cs" />
+    <Compile Include="Controllers\XuatKhoesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202111231338489_create_8_table.cs" />
-    <Compile Include="Migrations\202111231338489_create_8_table.Designer.cs">
-      <DependentUpon>202111231338489_create_8_table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111231545116_create_column_table_nhapkho.cs" />
-    <Compile Include="Migrations\202111231545116_create_column_table_nhapkho.Designer.cs">
-      <DependentUpon>202111231545116_create_column_table_nhapkho.cs</DependentUpon>
+    <Compile Include="Migrations\202111241215434_create_8_table.cs" />
+    <Compile Include="Migrations\202111241215434_create_8_table.Designer.cs">
+      <DependentUpon>202111241215434_create_8_table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BaoCao.cs" />
     <Compile Include="Models\DangNhap.cs" />
+    <Compile Include="Models\ExcelProcess.cs" />
     <Compile Include="Models\HangHoa.cs" />
     <Compile Include="Models\KhachHang.cs" />
     <Compile Include="Models\NCC.cs" />
@@ -194,6 +198,41 @@
     <Content Include="Views\DangNhaps\Details.cshtml" />
     <Content Include="Views\DangNhaps\Edit.cshtml" />
     <Content Include="Views\DangNhaps\Index.cshtml" />
+    <Content Include="Views\BaoCaos1\Create.cshtml" />
+    <Content Include="Views\BaoCaos1\Delete.cshtml" />
+    <Content Include="Views\BaoCaos1\Details.cshtml" />
+    <Content Include="Views\BaoCaos1\Edit.cshtml" />
+    <Content Include="Views\BaoCaos1\Index.cshtml" />
+    <Content Include="Views\NhapKhoes1\Create.cshtml" />
+    <Content Include="Views\NhapKhoes1\Delete.cshtml" />
+    <Content Include="Views\NhapKhoes1\Details.cshtml" />
+    <Content Include="Views\NhapKhoes1\Edit.cshtml" />
+    <Content Include="Views\NhapKhoes1\Index.cshtml" />
+    <Content Include="Views\HangHoas1\Create.cshtml" />
+    <Content Include="Views\HangHoas1\Delete.cshtml" />
+    <Content Include="Views\HangHoas1\Details.cshtml" />
+    <Content Include="Views\HangHoas1\Edit.cshtml" />
+    <Content Include="Views\HangHoas1\Index.cshtml" />
+    <Content Include="Views\KhachHangs1\Create.cshtml" />
+    <Content Include="Views\KhachHangs1\Delete.cshtml" />
+    <Content Include="Views\KhachHangs1\Details.cshtml" />
+    <Content Include="Views\KhachHangs1\Edit.cshtml" />
+    <Content Include="Views\KhachHangs1\Index.cshtml" />
+    <Content Include="Views\NCCs1\Create.cshtml" />
+    <Content Include="Views\NCCs1\Delete.cshtml" />
+    <Content Include="Views\NCCs1\Details.cshtml" />
+    <Content Include="Views\NCCs1\Edit.cshtml" />
+    <Content Include="Views\NCCs1\Index.cshtml" />
+    <Content Include="Views\NVKhoes\Create.cshtml" />
+    <Content Include="Views\NVKhoes\Delete.cshtml" />
+    <Content Include="Views\NVKhoes\Details.cshtml" />
+    <Content Include="Views\NVKhoes\Edit.cshtml" />
+    <Content Include="Views\NVKhoes\Index.cshtml" />
+    <Content Include="Views\XuatKhoes\Create.cshtml" />
+    <Content Include="Views\XuatKhoes\Delete.cshtml" />
+    <Content Include="Views\XuatKhoes\Details.cshtml" />
+    <Content Include="Views\XuatKhoes\Edit.cshtml" />
+    <Content Include="Views\XuatKhoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -212,11 +251,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202111231338489_create_8_table.resx">
-      <DependentUpon>202111231338489_create_8_table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111231545116_create_column_table_nhapkho.resx">
-      <DependentUpon>202111231545116_create_column_table_nhapkho.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111241215434_create_8_table.resx">
+      <DependentUpon>202111241215434_create_8_table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

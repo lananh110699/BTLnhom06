@@ -35,5 +35,8 @@ namespace BTLnhom06.Models
         [Required(ErrorMessage = "Mã NV không được để trống")]
         [Display(Name = "Mã NV")]
         public String MaNV { get; set; }
+
+        
+
     }
 }

@@ -29,5 +29,7 @@ namespace BTLnhom06.Models
 
         [Required(ErrorMessage = "SĐT không được để trống")]
         public String SĐT { get; set; }
+
+        
     }
 }

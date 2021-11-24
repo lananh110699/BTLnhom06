@@ -6,14 +6,14 @@ namespace BTLnhom06.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
+    [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
     public sealed partial class create_8_table : IMigrationMetadata
     {
         private readonly ResourceManager Resources = new ResourceManager(typeof(create_8_table));
         
         string IMigrationMetadata.Id
         {
-            get { return "202111231338489_create_8_table"; }
+            get { return "202111241215434_create_8_table"; }
         }
         
         string IMigrationMetadata.Source
