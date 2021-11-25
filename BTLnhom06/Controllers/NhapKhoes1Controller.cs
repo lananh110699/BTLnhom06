@@ -12,8 +12,8 @@ namespace BTLnhom06.Controllers
 {
     public class NhapKhoes1Controller : Controller
     {
-        private QuanLyKhoDBContext db = new QuanLyKhoDBContext();
-
+        QuanLyKhoDBContext db = new QuanLyKhoDBContext();
+        AutoGenerateKey aukey = new AutoGenerateKey();
         // GET: NhapKhoes1
         public ActionResult Index()
         {
@@ -38,7 +38,11 @@ namespace BTLnhom06.Controllers
         // GET: NhapKhoes1/Create
         public ActionResult Create()
         {
+            var MPNID = db.NhapKhos.OrderByDescending(m => m.MaPhieuNhap).FirstOrDefault().MaPhieuNhap;
+            var newID = aukey.GenerateKey(MPNID);
+            ViewBag.NewMPNID = newID;
             return View();
+           
         }
 
         // POST: NhapKhoes1/Create

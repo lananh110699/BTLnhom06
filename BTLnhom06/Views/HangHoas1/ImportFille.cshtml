@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "ImportFille";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ImportFille</h2>
+
+@using (Html.BeginForm("ImportFille", "HangHoas1", FormMethod.Post, new
+{ enctype = "multipart/form-data" }))
+{
+    <div>
+        @Html.TextBox("file", "", new { type = "file" })<br />
+        <input type="submit" value="Upload" />
+    </div>
+}

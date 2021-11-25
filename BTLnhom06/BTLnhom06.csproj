@@ -144,7 +144,12 @@
     <Compile Include="Migrations\202111241215434_create_8_table.Designer.cs">
       <DependentUpon>202111241215434_create_8_table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111251500065_tudong_sinhma.cs" />
+    <Compile Include="Migrations\202111251500065_tudong_sinhma.Designer.cs">
+      <DependentUpon>202111251500065_tudong_sinhma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AutoGenerateKey.cs" />
     <Compile Include="Models\BaoCao.cs" />
     <Compile Include="Models\DangNhap.cs" />
     <Compile Include="Models\ExcelProcess.cs" />
@@ -233,6 +238,7 @@
     <Content Include="Views\XuatKhoes\Details.cshtml" />
     <Content Include="Views\XuatKhoes\Edit.cshtml" />
     <Content Include="Views\XuatKhoes\Index.cshtml" />
+    <Content Include="Views\HangHoas1\ImportFille.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -253,6 +259,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202111241215434_create_8_table.resx">
       <DependentUpon>202111241215434_create_8_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111251500065_tudong_sinhma.resx">
+      <DependentUpon>202111251500065_tudong_sinhma.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

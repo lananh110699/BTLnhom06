@@ -24,6 +24,14 @@ namespace BTLnhom06.Controllers
             return View(db.HangHoas.ToList());
         }
 
+        public ActionResult ImportFille(HttpPostedFileBase file)
+        {
+            DataTable dt = CopyDataFromExcelFile(file);
+            OverwriteFastData(dt);             
+            return RedirectToAction("Index","HangHoas1");
+
+        }
+
         // GET: HangHoas1/Details/5
         public ActionResult Details(string id)
         {
@@ -136,18 +144,21 @@ namespace BTLnhom06.Controllers
             DataTable dt = ExcelPro.ReadDataFromExcelFile(_path, false);
             return dt;
         }
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["LTQLDBContext"].ConnectionString);
-        private void OverwriteFastData(int? ArticleID)
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["QuanLyKhoDBContext"].ConnectionString);
+        private void OverwriteFastData(DataTable dt)
         {
             //dt là databasecos chứa dữ liệu để import vào database
-            DataTable dt = new DataTable();
+            //DataTable dt = new DataTable();
 
             //mapping các column trong database vào các column trong table ở CSDL
             SqlBulkCopy bulkcopy = new SqlBulkCopy(con);
-            bulkcopy.DestinationTableName = "Article";
-            bulkcopy.ColumnMappings.Add(0, "ArticleID");
-            bulkcopy.ColumnMappings.Add(1, "Author");
-            bulkcopy.ColumnMappings.Add(2, "ArticleContent");
+            bulkcopy.DestinationTableName = "HangHoa";
+            bulkcopy.ColumnMappings.Add("MaHang", "MaHang");
+            bulkcopy.ColumnMappings.Add("TenHang", "TenHang");
+            bulkcopy.ColumnMappings.Add("Size", "Size");
+            bulkcopy.ColumnMappings.Add("SoLuong", "SoLuong");
+            bulkcopy.ColumnMappings.Add("DonGia", "DonGia");
+            bulkcopy.ColumnMappings.Add("ThanhTien", "ThanhTien");
             con.Open();
             bulkcopy.WriteToServer(dt);
             con.Close();
