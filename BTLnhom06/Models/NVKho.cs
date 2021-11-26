@@ -13,17 +13,18 @@ namespace BTLnhom06.Models
         [Key]
         [Required(ErrorMessage = "Mã NV không được để trống")]
         [Display(Name = "Mã NV")]
-        public String MaNV { get; set; }
+        public string MaNV { get; set; }
 
         [Required(ErrorMessage = "Tên NV không được để trống")]
         [Display(Name = "Tên NV")]
-        public String TenNV { get; set; }
+        public string TenNV { get; set; }
 
         [Required(ErrorMessage = "Địa Chỉ không được để trống")]
         [Display(Name = "Địa Chỉ")]
-        public String DiaChi { get; set; }
+        public string DiaChi { get; set; }
 
         [Required(ErrorMessage = "SĐT không được để trống")]
-        public String SĐT { get; set; }
+        public string SĐT { get; set; }
+        public ICollection<XuatKho> XuatKhos { get; set; }
     }
 }

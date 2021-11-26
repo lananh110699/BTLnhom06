@@ -13,28 +13,29 @@ namespace BTLnhom06.Models
         [Key]
         [Required(ErrorMessage = "Mã Phiếu Nhập không được để trống")]
         [Display(Name = "Mã Phiếu Nhập")]
-        public String MaPhieuNhap { get; set; }
+        public string MaPhieuNhap { get; set; }
 
         [Required(ErrorMessage = "Ngày Xuất không được để trống")]
         [Display(Name = "Ngày Nhập")]
-        public String NgayNhap { get; set; }
+        public string NgayNhap { get; set; }
 
         [Required(ErrorMessage = "Mã Hàng không được để trống")]
         [Display(Name = "Mã Hàng")]
-        public String MaHang { get; set; }
+        public string MaHang { get; set; }
 
         [Display(Name = "Số Lượng")]
-        public String SoLuong { get; set; }
+        public string SoLuong { get; set; }
 
         [Display(Name = "Đơn Giá")]
-        public String DonGia { get; set; }
+        public string DonGia { get; set; }
 
         [Display(Name = "Thành Tiền")]
-        public String ThanhTien { get; set; }
+        public string ThanhTien { get; set; }
 
         [Required(ErrorMessage = "Mã NV không được để trống")]
         [Display(Name = "Mã NV")]
-        public String MaNV { get; set; }
+        public string MaNV { get; set; }
+
 
         
 

@@ -36,6 +36,8 @@ namespace BTLnhom06.Models
         [Display(Name = "Mã NV")]
         public string MaNV { get; set; }
 
+        public NVKho NVKho { get; set; }
+
     
-}
+    }
 }

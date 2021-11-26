@@ -13,22 +13,22 @@ namespace BTLnhom06.Models
         [Key]
         [Required(ErrorMessage = "Mã NCC không được để trống")]
         [Display(Name = "Mã NCC")]
-        public String MaNCC { get; set; }
+        public string MaNCC { get; set; }
 
         [Required(ErrorMessage = "Tên NCC không được để trống")]
         [Display(Name = "Tên NCC")]
-        public String TenNCC { get; set; }
+        public string TenNCC { get; set; }
 
         [Required(ErrorMessage = "Tên Hàng không được để trống")]
         [Display(Name = "Tên Hàng")]
-        public String TenHang { get; set; }
+        public string TenHang { get; set; }
 
         [Required(ErrorMessage = "Địa Chỉ không được để trống")]
         [Display(Name = "Địa Chỉ")]
-        public String DiaChi { get; set; }
+        public string DiaChi { get; set; }
 
         [Required(ErrorMessage = "SĐT không được để trống")]
-        public String SĐT { get; set; }
+        public string SĐT { get; set; }
 
         
     }

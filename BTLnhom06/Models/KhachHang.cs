@@ -13,25 +13,25 @@ namespace BTLnhom06.Models
         [Key]
         [Required(ErrorMessage = "Mã khách hàng không được để trống")]
         [Display(Name = "Mã Khách Hàng")]
-        public String MaKH { get; set; }
+        public string MaKH { get; set; }
 
         [Required(ErrorMessage = "Tên Khách Hàng không được để trống")]
         [Display(Name = "Tên Khách Hàng")]
-        public String TenKH { get; set; }
+        public string TenKH { get; set; }
 
         [Required(ErrorMessage = "Địa Chỉ không được để trống")]
         [Display(Name = "Địa Chỉ")]
-        public String DiaChi { get; set; }
+        public string DiaChi { get; set; }
 
         [Required(ErrorMessage = "SĐT không được để trống")]
-        public String SĐT { get; set; }
+        public string SĐT { get; set; }
 
         [Required(ErrorMessage = "Số tài khoản không được để trống")]
         [Display(Name = "Số tài khoản")]
-        public String STK { get; set; }
+        public string STK { get; set; }
 
         [Required(ErrorMessage = "Ngân Hàng không được để trống")]
         [Display(Name = "Ngân Hàng")]
-        public String NganHang { get; set; }
+        public string NganHang { get; set; }
     }
 }

@@ -13,23 +13,23 @@ namespace BTLnhom06.Models
         [Key]
         [Required(ErrorMessage = "Mã Hàng không được để trống")]
         [Display(Name = "Mã Hàng")]
-        public String MaHang { get; set; }
+        public string MaHang { get; set; }
 
         [Required(ErrorMessage = "Tên Hàng không được để trống")]
         [Display(Name = "Tên Hàng")]
-        public String TenHang { get; set; }
+        public string TenHang { get; set; }
 
         [Required(ErrorMessage = "size không được để trống")]
-        public String Size { get; set; }
+        public string Size { get; set; }
 
         [Display(Name = "Số Lượng")]
-        public String SoLuong { get; set; }
+        public string SoLuong { get; set; }
 
         [Display(Name = "Đơn Giá")]
-        public String DonGia { get; set; }
+        public string DonGia { get; set; }
 
 
         [Display(Name = "Thành Tiền")]
-        public String ThanhTien { get; set; }
+        public string ThanhTien { get; set; }
     }
 }

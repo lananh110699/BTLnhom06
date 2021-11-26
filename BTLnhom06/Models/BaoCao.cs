@@ -12,15 +12,15 @@ namespace BTLnhom06.Models
     {
         [Key]
         [Display(Name = "Doanh thu theo tháng")]
-        public String DoanhThuTheoThang { get; set; }
+        public string DoanhThuTheoThang { get; set; }
 
         [Display(Name = "Doanh thu theo quý")]
-        public String DoanhThuTheoQuy { get; set; }
+        public string DoanhThuTheoQuy { get; set; }
 
         [Display(Name = "Đơn hàng trong ngày")]
-        public String DonHangTrongNgay { get; set; }
+        public string DonHangTrongNgay { get; set; }
 
         [Display(Name = "Đơn hàng trong tháng")]
-        public String DonHangTrongThang { get; set; }
+        public string DonHangTrongThang { get; set; }
     }
 }
